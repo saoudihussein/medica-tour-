@@ -1,0 +1,65 @@
+.logo {
+    width: 152px;
+}
+
+.subLink {
+    color: #444 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link {
+    color: #444 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.close-style {
+    padding-right: 26px;
+}
+
+.link:active {
+    color: #00b3cc !important;
+}
+
+.sidenavOpen {
+    height: 100%;
+    width: 320px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #ffff;
+    transition: 0.5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #ffff;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 993px) {
+    .mobile {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .mobile {
+        display: none;
+    }
+}
+
+.logo-mobile {
+    width: 152px !important;
+    margin-left: 25px !important;
+}

@@ -1,0 +1,46 @@
+.footer-gen-style {
+    background-image: url(../images/footer-bg.jpg);
+    background-color: transparent;
+    font-size: 90%;
+    background-position: 50% 0.0290375px;
+    color: #fff;
+}
+
+.footer-gen-style a {
+    color: #fff;
+}
+
+.footer-bloc-1-title {
+    font-size: 30px;
+    font-family: Bree Serif;
+    font-weight: bold;
+    border-bottom: 2px solid #005b88;
+    padding-bottom: 5px;
+}
+
+.footer-bloc-1-text {
+    font-size: 18px;
+}
+
+.card-title,
+.card-subtitle {
+    color: #000 !important;
+}
+
+.last-footer {
+    text-align: center;
+}
+
+.img-last-footer {
+    height: 20px;
+    width: 200px;
+}
+
+.last-footer-style {
+    background-color: #005b88 !important;
+    color: #fff;
+}
+
+.blog-style{
+    margin-left: 0;
+}
