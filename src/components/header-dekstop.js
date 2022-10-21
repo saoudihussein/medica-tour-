@@ -9,13 +9,131 @@ import { Link } from "gatsby";
 
 
 const HeaderDesktopComponent = () => {
-    const [menu, setMenu] = React.useState(false);
-    const [exit, setExit] = React.useState(false);
-    const [interventions, setInterventions] = React.useState(false);
-    const [procedures, setProcedures] = React.useState(false);
+    const [header, setHeader] = React.useState(window.scrollY > 300 ? true : false);
+
+
+
+    React.useEffect(() => {
+        document.addEventListener('scroll', () =>
+            window.scrollY > 300 ? setHeader(true) : setHeader(false)
+        );
+    }, [])
 
     return (
         <div className="desktop">
+
+
+            {
+                !header ||
+                <div className="container-fluid header">
+                    <div class="container pt-4 pb-4 ">
+                        <div className="row">
+                            <div className="col-10 menu-bar">
+                                <ul>
+                                    <li>
+                                        <Link to="/" className="text-uppercase link-desk">
+                                            ACCUEIL
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                            Interventions
+                                        </Link>
+
+
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li>
+                                                    <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Bariatrique</Link>
+                                                    <div class="dropdown-menu-1">
+                                                        <ul>
+                                                            <li><Link className="text-uppercase sublink" href="#">Sleeve gastrique</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Anneau gastrique</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">By-pass gastrique</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Ballon gastrique</Link></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                            Procedure
+                                        </Link>
+
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li>
+                                                    <Link href="#">Procedure</Link>
+                                                    <div class="dropdown-menu-1">
+                                                        <ul>
+                                                            <li><Link href="#">Pricing</Link></li>
+                                                            <li><Link href="#">Pricing</Link></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                            Devis&nbsp;gratuits
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                            Tarifs
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                            A&nbsp;propos
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                            Blog
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                            Contact
+                                        </Link>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div className="col">
+                                <div className="row float-end">
+                                    <div className="col-1">
+                                        <a href="https://www.facebook.com/Medicatour.fr" className="link-desk" target="_blank"> <FaFacebookF /></a>
+                                    </div>
+
+                                    <div className="col-1">
+                                        <a href="https://www.linkedin.com/company/medica-tour-fr/" className="link-desk" target="_blank"><FaLinkedinIn /></a>
+                                    </div>
+
+                                    <div className="col-1">
+                                        <a href="https://www.instagram.com/medicatour.fr/?hl=fr" className="link-desk" target="_blank"> <FaInstagram /></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            }
 
             <div class="container">
                 <div class="row d-flex">
@@ -46,7 +164,7 @@ const HeaderDesktopComponent = () => {
                         <div className="row">
                             <div className="col">
                                 <div className="row">
-                                    <a href="tel:+216 22 543 410">
+                                    <a href="tel:+216 22 543 410" className="link-desk">
                                         <span>
                                             <FaPhoneAlt /> +216 22 543 410
                                         </span>
@@ -54,7 +172,7 @@ const HeaderDesktopComponent = () => {
                                 </div>
 
                                 <div className="row">
-                                    <a href="mailto:Contact@medica-tour.fr">
+                                    <a href="mailto:Contact@medica-tour.fr" className="link-desk">
                                         <span>
                                             <FaRegEnvelope /> Contact@medica-tour.fr
                                         </span>
@@ -82,7 +200,7 @@ const HeaderDesktopComponent = () => {
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
 
@@ -94,12 +212,12 @@ const HeaderDesktopComponent = () => {
                     <div className="col-10 menu-bar">
                         <ul>
                             <li>
-                                <Link to="/" className="text-uppercase link">
+                                <Link to="/" className="text-uppercase link-desk">
                                     ACCUEIL
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-uppercase link dropbtn">
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
                                     Interventions
                                 </Link>
 
@@ -122,7 +240,7 @@ const HeaderDesktopComponent = () => {
                             </li>
 
                             <li>
-                                <Link to="/" className="text-uppercase link dropbtn">
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
                                     Procedure
                                 </Link>
 
@@ -142,31 +260,31 @@ const HeaderDesktopComponent = () => {
                             </li>
 
                             <li>
-                                <Link to="/" className="text-uppercase link dropbtn">
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
                                     Devis&nbsp;gratuits
                                 </Link>
                             </li>
 
                             <li>
-                                <Link to="/" className="text-uppercase link dropbtn">
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
                                     Tarifs
                                 </Link>
                             </li>
 
                             <li>
-                                <Link to="/" className="text-uppercase link dropbtn">
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
                                     A&nbsp;propos
                                 </Link>
                             </li>
 
                             <li>
-                                <Link to="/" className="text-uppercase link dropbtn">
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
                                     Blog
                                 </Link>
                             </li>
 
                             <li>
-                                <Link to="/" className="text-uppercase link dropbtn">
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
                                     Contact
                                 </Link>
                             </li>
@@ -178,15 +296,15 @@ const HeaderDesktopComponent = () => {
                     <div className="col">
                         <div className="row float-end">
                             <div className="col-1">
-                                <a href="https://www.facebook.com/Medicatour.fr" target="_blank"> <FaFacebookF /></a>
+                                <a href="https://www.facebook.com/Medicatour.fr" className="link-desk" target="_blank"> <FaFacebookF /></a>
                             </div>
 
                             <div className="col-1">
-                                <a href="https://www.linkedin.com/company/medica-tour-fr/" target="_blank"><FaLinkedinIn /></a>
+                                <a href="https://www.linkedin.com/company/medica-tour-fr/" className="link-desk" target="_blank"><FaLinkedinIn /></a>
                             </div>
 
                             <div className="col-1">
-                                <a href="https://www.instagram.com/medicatour.fr/?hl=fr" target="_blank"> <FaInstagram /></a>
+                                <a href="https://www.instagram.com/medicatour.fr/?hl=fr" className="link-desk" target="_blank"> <FaInstagram /></a>
                             </div>
                         </div>
 

@@ -13,7 +13,7 @@ const ChurigPage = () => {
     return (
         <Layout>
             <div className="container-fluid service pt-5 pb-5">
-                <div className="container">
+                <div className="container intern-page-style">
                     <h1 className="service-title">
                         Chirurgie bariatrique
                     </h1>
@@ -26,67 +26,45 @@ const ChurigPage = () => {
 
             <div className="container mt-4">
                 <div className="row">
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 pt-2">
                         <div class="card" >
                             <img src={sleeveGastrectomie} class="card-img-top img-fluid" alt="Sleeve gastrique" />
-                            <div class="card-body w-100">
-                                <h5 class="card-title inter-title">Sleeve gastrique</h5>
-                                <p class="card-text">
-                                    La sleeve gastrectomie en Tunisie est une intervention qui sert à réduire la taille de l’estomac. On
-                                    effectue une ablation du 2/3 de son volume. Cette technique est la plus utilisée aujourd’hui
-                                    puisqu’elle permet une perte de poids très importante.
-                                </p>
-                                <a href="#" class="btn btn-success">En savoir plus</a>
+                            <div class="card-body card-body-intervention  w-100">
+                                <h5 class="text-center card-body-title">Sleeve gastrique</h5>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 pt-2">
                         <div class="card" >
                             <img src={byPassGastrique} class="card-img-top img-fluid" alt="Bypass gastrique" />
-                            <div class="card-body w-100">
-                                <h5 class="card-title inter-title">Bypass gastrique</h5>
-                                <p class="card-text">
-                                    Une Bypass gastrique en Tunisie permet une perte de poids entre 35 kg et 80 kg*. Elle consiste à
-                                    court-circuiter une grande partie de l’estomac en le réduisant à une petite poche. Un court-circuit
-                                    d’une partie de l’estomac avec la partie moyenne de l’intestin grêle permet
-                                </p>
-                                <a href="#" class="btn btn-success">En savoir plus</a>
+                            <div class="card-body card-body-intervention  w-100">
+                                <h5 class="text-center card-body-title">Bypass gastrique</h5>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 pt-2">
                         <div class="card" >
                             <img src={ballonGastrique} class="card-img-top img-fluid" alt="sleeve-gastrectomie.webp" />
-                            <div class="card-body w-100">
-                                <h5 class="card-title inter-title">Ballon gastrique</h5>
-                                <p class="card-text">
-                                    La procédure du ballon gastrique est un nouveau système de perte de poids qui vise à réduire la quantité de nourriture ingérée lors d’un repas
-                                    et à augmenter la sensation d’être rassasié plus longtemps après n’avoir mangé que de petits repas.
-                                </p>
-                                <a href="#" class="btn btn-success">En savoir plus</a>
+                            <div class="card-body card-body-intervention  w-100">
+                                <h5 class="text-center card-body-title">Ballon gastrique</h5>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 pt-2">
                         <div class="card" >
                             <img src={anneauGastrique} class="card-img-top img-fluid" alt="Anneau gastrique" />
-                            <div class="card-body w-100">
-                                <h5 class="card-title inter-title">Anneau gastrique</h5>
-                                <p class="card-text">
-                                    La procédure du ballon gastrique est un nouveau système de perte de poids qui vise à réduire la quantité de nourriture ingérée lors d’un repas et à augmenter
-                                    la sensation d’être rassasié plus longtemps après n’avoir mangé que de petits repas.
-                                </p>
-                                <a href="#" class="btn btn-success">En savoir plus</a>
+                            <div class="card-body card-body-intervention  w-100">
+                                <h5 class=" text-center card-body-title">Anneau gastrique</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="container-fluid  pb-5 pt-2">
+            <div className="container-fluid pb-5 pt-2">
                 <div class="container ">
                     <div className="row">
 

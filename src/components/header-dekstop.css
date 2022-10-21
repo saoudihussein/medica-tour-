@@ -24,7 +24,11 @@ hr {
     padding-right: 2%;
 }
 
-.sublink{
+.link-desk {
+    color: white !important;
+}
+
+.sublink {
     font-size: 13px;
 }
 
@@ -98,8 +102,8 @@ hr {
     border-radius: 0.25rem;
 }
 
-.dropdown-menu{
-    font-size: 15px!important;
+.dropdown-menu {
+    font-size: 15px !important;
 }
 
 .dropdown-menu ul li:hover .dropdown-menu-1 {
@@ -108,3 +112,24 @@ hr {
     left: 150px;
     top: 0;
 }
+
+.header {
+    position: fixed;
+    background-color: #fff;
+}
+
+.header a {
+    color: black !important;
+}
+
+
+.desktop {
+    position: absolute;
+    z-index: 999;
+    color: white;
+    width: 100%;
+}
+
+/* .desktop a {
+    color: white;
+} */

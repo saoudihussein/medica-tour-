@@ -16,8 +16,8 @@ const HeaderMobileComponent = () => {
     return (
 
         <>
-            <div className="container-fluid mobile">
-                <GiHamburgerMenu size={50} onClick={() => setIsOpen(!isOpen)} />
+            <div className="container-fluid mobile pt-3">
+                <GiHamburgerMenu size={30} onClick={() => setIsOpen(!isOpen)} />
                 <span>
                     <Link to="/">
                         <img src={logo} className="img-fluid logo-mobile" alt="medica-tour" />
@@ -30,7 +30,7 @@ const HeaderMobileComponent = () => {
 
                 <div className={isOpen ? "sidenavOpen" : "sidenav"}>
                     <div className="d-flex flex-row-reverse bd-highlight close-style pt-2" onClick={() => setIsOpen(!isOpen)}>
-                        <AiOutlineClose size={50} />
+                        <AiOutlineClose color="black" size={30} />
                     </div>
                     <div className="d-flex justify-content-center">
                         <Link to="/">
@@ -61,7 +61,7 @@ const HeaderMobileComponent = () => {
 
                     <div className="intervetions">
 
-                        <div className="d-flex justify-content-center pt-4">
+                        <div className="d-flex justify-content-center pt-3">
                             <div className="row">
                                 <div className="col">
                                     <Link className="link" to="#">Interventions</Link>
@@ -69,8 +69,8 @@ const HeaderMobileComponent = () => {
                                 <div className="col" onClick={() => setInterventions(!interventions)} >
                                     {
                                         interventions ?
-                                            <span className="angleIcon"><FaAngleUp /></span> :
-                                            <span className="angleIcon"><FaAngleDown /></span>
+                                            <span className="angleIcon"><FaAngleUp  color="black" /></span> :
+                                            <span className="angleIcon"><FaAngleDown color="black" /></span>
                                     }
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to=""><div className="d-flex justify-content-center pt-3">
+                                            <Link className="subLink" to=""><div className="d-flex justify-content-center">
                                                 <div className="row">
                                                     <div className="col">
                                                         <Link className="subLink" to="">Esthetique</Link>
@@ -112,7 +112,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to=""><div className="d-flex justify-content-center pt-3">
+                                            <Link className="subLink" to=""><div className="d-flex justify-content-center">
                                                 <div className="row">
                                                     <div className="col">
                                                         <Link className="subLink" to="">Chirurgie corps</Link>
@@ -133,7 +133,7 @@ const HeaderMobileComponent = () => {
 
                     <div className="procedures">
 
-                        <div className="d-flex justify-content-center pt-4">
+                        <div className="d-flex justify-content-center pt-3">
                             <div className="row">
                                 <div className="col">
                                     <Link className="link" to="#">Procedures</Link>
@@ -141,8 +141,8 @@ const HeaderMobileComponent = () => {
                                 <div className="col" onClick={() => setProcedures(!procedures)} >
                                     {
                                         procedures ?
-                                            <span className="angleIcon"><FaAngleUp /></span> :
-                                            <span className="angleIcon"><FaAngleDown /></span>
+                                            <span className="angleIcon"><FaAngleUp color="black" /></span> :
+                                            <span className="angleIcon"><FaAngleDown color="black" /></span>
                                     }
                                 </div>
                             </div>
@@ -158,7 +158,7 @@ const HeaderMobileComponent = () => {
                                     </div>
                                 </div>
 
-                                <div className="d-flex justify-content-center pt-3">
+                                <div className="d-flex justify-content-center  pt-3">
                                     <div className="row">
                                         <div className="col">
                                             <Link className="subLink" to="">Clinique</Link>
@@ -166,10 +166,10 @@ const HeaderMobileComponent = () => {
                                     </div>
                                 </div>
 
-                                <div className="d-flex justify-content-center pt-3">
+                                <div className="d-flex justify-content-center  pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to=""><div className="d-flex justify-content-center pt-3">
+                                            <Link className="subLink" to=""><div className="d-flex justify-content-center">
                                                 <div className="row">
                                                     <div className="col">
                                                         <Link className="subLink" to="">Séjour Médical</Link>
@@ -186,7 +186,7 @@ const HeaderMobileComponent = () => {
                     </div>
 
                     <div className="tarif">
-                        <div className="d-flex justify-content-center pt-4">
+                        <div className="d-flex justify-content-center  pt-3">
                             <div className="row">
                                 <div className="col">
                                     <Link className="link" to="#">Tarif</Link>
@@ -196,7 +196,7 @@ const HeaderMobileComponent = () => {
                     </div>
 
                     <div className="apropos">
-                        <div className="d-flex justify-content-center pt-4">
+                        <div className="d-flex justify-content-center  pt-3">
                             <div className="row">
                                 <div className="col">
                                     <Link className="link" to="#">A&nbsp;propos</Link>
@@ -206,7 +206,7 @@ const HeaderMobileComponent = () => {
                     </div>
 
                     <div className="blog">
-                        <div className="d-flex justify-content-center pt-4">
+                        <div className="d-flex justify-content-center pt-3">
                             <div className="row">
                                 <div className="col">
                                     <Link className="link" to="#">Blog</Link>
@@ -216,7 +216,7 @@ const HeaderMobileComponent = () => {
                     </div>
 
                     <div className="contact">
-                        <div className="d-flex justify-content-center pt-4">
+                        <div className="d-flex justify-content-center pt-3">
                             <div className="row">
                                 <div className="col">
                                     <Link className="link" to="#">Contact</Link>

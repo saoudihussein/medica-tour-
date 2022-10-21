@@ -16,6 +16,7 @@ body {
         background-repeat: no-repeat;
         background-attachment: scroll;
     }
+
     .free-devis {
         margin-top: 7px;
     }
@@ -59,13 +60,6 @@ body {
 .our-chur {
     margin-right: 25px;
 }
-
-/* .slide {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-} */
 
 .btSubTitle {
     color: #fff;
@@ -151,8 +145,7 @@ body {
 }
 
 .card-img-top {
-    height: 408px !important;
-    width: 408px !important;
+    height: 223px !important;
 }
 
 .h12 {
@@ -208,12 +201,17 @@ body {
 .text-devis-block {
     color: #fff;
     font-size: 22px;
+    font-family: Bree Serif;
+    font-weight: bold;
 }
 
 .btn-devis-free {
     background-color: #fff;
     border: 2px solid #fff;
     color: #000 !important;
+    font-family: Merriweather;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .sej-style {
@@ -302,7 +300,12 @@ body {
 }
 
 
-.last-footer-style{
+.last-footer-style {
     background-color: #005b88 !important;
     color: #fff;
+}
+
+
+.carousel-caption {
+    color: #fff !important;
 }
