@@ -70,3 +70,14 @@
     width: 152px !important;
     margin-left: 25px !important;
 }
+
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.btn-secondary:active:focus{
+    box-shadow:none !important;
+}

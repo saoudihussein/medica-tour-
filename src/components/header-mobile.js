@@ -4,6 +4,7 @@ import logo from "../images/logo.webp";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsFillInfoCircleFill } from "react-icons/bs";
 import { Link } from "gatsby";
 
 
@@ -16,13 +17,35 @@ const HeaderMobileComponent = () => {
     return (
 
         <>
+
             <div className="container-fluid mobile pt-3">
-                <GiHamburgerMenu size={30} onClick={() => setIsOpen(!isOpen)} />
-                <span>
-                    <Link to="/">
-                        <img src={logo} className="img-fluid logo-mobile" alt="medica-tour" />
-                    </Link>
-                </span>
+
+                <div className="row">
+                    <div className="col-9">
+                        <GiHamburgerMenu size={30} onClick={() => setIsOpen(!isOpen)} />
+
+                        <Link to="/">
+                            <img src={logo} className="img-fluid logo-mobile text-center" alt="medica-tour" />
+                        </Link>
+                    </div>
+
+                    <div className="col-3">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <BsFillInfoCircleFill size={30} />
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
 
             <div className="container mobile">
@@ -69,7 +92,7 @@ const HeaderMobileComponent = () => {
                                 <div className="col" onClick={() => setInterventions(!interventions)} >
                                     {
                                         interventions ?
-                                            <span className="angleIcon"><FaAngleUp  color="black" /></span> :
+                                            <span className="angleIcon"><FaAngleUp color="black" /></span> :
                                             <span className="angleIcon"><FaAngleDown color="black" /></span>
                                     }
                                 </div>
