@@ -133,6 +133,7 @@ body {
 
 .card-dr {
     background-color: #006d95;
+    color: #fff !important;
 }
 
 .card-title {
@@ -308,4 +309,20 @@ body {
 
 .carousel-caption {
     color: #fff !important;
+}
+
+.btn-sec-color {
+    background-color: #a1cf5e;
+    border-style: none;
+    color: #ffff !important;
+}
+
+.btn-prim-color {
+    background-color: #0175aa;
+    border-style: none;
+    color: #ffff !important;
+}
+
+img{
+    object-fit: cover;
 }

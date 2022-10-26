@@ -27,109 +27,233 @@ const HeaderDesktopComponent = () => {
                 !header ||
                 <div className="container-fluid header">
                     <div class="container pt-4 pb-4 ">
-                        <div className="row">
-                            <div className="col-10 menu-bar">
-                                <ul>
-                                    <li>
-                                        <Link to="/" className="text-uppercase link-desk">
-                                            ACCUEIL
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
-                                            Interventions
-                                        </Link>
+                    <div className="row">
+                    <div className="col-10 menu-bar">
+                        <ul>
+                            <li>
+                                <Link to="/" className="text-uppercase link-desk">
+                                    ACCUEIL
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                    Interventions
+                                </Link>
 
 
-                                        <div class="dropdown-menu">
-                                            <ul>
-                                                <li>
-                                                    <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Bariatrique</Link>
-                                                    <div class="dropdown-menu-1">
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Bariatrique</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Sleeve gastrique</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Anneau gastrique</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">By-pass gastrique</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Ballon gastrique</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Dentaire</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Implant dentaire</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Facettes Dentaires</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Blanchiment dents</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Gingivectomie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Couronne Dentaire</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Esthetique</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Acide hyaluronique</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Toxine Botulique</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Traitement Laser</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Mesobotox</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">PRP</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Rhinoplastie Médicale</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Techniques d’Amincissement</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Fils Tenseurs</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Mésothérapie</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Chirurgie corps</Link>
+                                            <div class="dropdown-menu-1 chir-corp">
+
+                                                <div className="row">
+                                                    <div className="col-3">
                                                         <ul>
-                                                            <li><Link className="text-uppercase sublink" href="#">Sleeve gastrique</Link></li>
-                                                            <li><Link className="text-uppercase sublink" href="#">Anneau gastrique</Link></li>
-                                                            <li><Link className="text-uppercase sublink" href="#">By-pass gastrique</Link></li>
-                                                            <li><Link className="text-uppercase sublink" href="#">Ballon gastrique</Link></li>
+                                                            <li><Link className="text-uppercase sublink fw-bold" href="#">Chirurgie visage</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Blépharoplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Canthopexie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Genioplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lifting visage</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Mini lifting visage</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Otoplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Rhinoplastie</Link></li>
                                                         </ul>
                                                     </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
 
-                                    <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
-                                            Procedure
-                                        </Link>
 
-                                        <div class="dropdown-menu">
-                                            <ul>
-                                                <li>
-                                                    <Link href="#">Procedure</Link>
-                                                    <div class="dropdown-menu-1">
+
+                                                    <div className="col-4">
                                                         <ul>
-                                                            <li><Link href="#">Pricing</Link></li>
-                                                            <li><Link href="#">Pricing</Link></li>
+                                                            <li><Link className="text-uppercase sublink fw-bold" href="#">Chirurgie silhouette</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">LipoVaser ou Liposuccion Vaser</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Abdominoplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Mini abdominoplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lifting des Bras</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Bodylift Tunise</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">lifting des cuisses</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Augmentation des mollets</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Augmentation fesses</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lipofilling fesses</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Bbl tunisie</Link></li>
                                                         </ul>
                                                     </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
 
-                                    <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
-                                            Devis&nbsp;gratuits
-                                        </Link>
-                                    </li>
+                                                    <div className="col-3">
+                                                        <ul>
+                                                            <li><Link className="text-uppercase sublink fw-bold" href="#">Chirurgie sein</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Augmentation mammaire</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lifting des seins</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lipofilling mammaire</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Réduction mammaire</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Gynécomastie</Link></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
 
-                                    <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
-                                            Tarifs
-                                        </Link>
-                                    </li>
 
-                                    <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
-                                            A&nbsp;propos
-                                        </Link>
-                                    </li>
+                                            </div>
+                                        </li>
 
-                                    <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
-                                            Blog
-                                        </Link>
-                                    </li>
 
-                                    <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
-                                            Contact
-                                        </Link>
-                                    </li>
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Esthétique de l’intimité</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Nymphoplastie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Penoplastie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Vaginoplastie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Gingivectomie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Hymenoplastie</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
 
-                                </ul>
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">PMA</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Biopsie testiculaire</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Fécondation in vitro</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Insémination artificielle</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Gingivectomie</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
 
-                            </div>
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Greffe de cheveux</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Greffe poils et cheveux</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Greffe de barbe</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Greffe et implants des sourcils</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
 
-                            <div className="col">
-                                <div className="row float-end">
-                                    <div className="col-1">
-                                        <a href="https://www.facebook.com/Medicatour.fr" className="link-desk" target="_blank"> <FaFacebookF /></a>
-                                    </div>
 
-                                    <div className="col-1">
-                                        <a href="https://www.linkedin.com/company/medica-tour-fr/" className="link-desk" target="_blank"><FaLinkedinIn /></a>
-                                    </div>
-
-                                    <div className="col-1">
-                                        <a href="https://www.instagram.com/medicatour.fr/?hl=fr" className="link-desk" target="_blank"> <FaInstagram /></a>
-                                    </div>
+                                    </ul>
                                 </div>
+                            </li>
 
+
+                            <li>
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                    Procedure
+                                </Link>
+
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li>
+                                            <Link className="text-uppercase" to="#">Hôtel</Link>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="#">Clinique</Link>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="#">Séjour Médical</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                    Devis&nbsp;gratuits
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                    Tarifs
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                    A&nbsp;propos
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                    Blog
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                    Contact
+                                </Link>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div className="col">
+                        <div className="row float-end">
+                            <div className="col-1">
+                                <a href="https://www.facebook.com/Medicatour.fr" className="link-desk" target="_blank"> <FaFacebookF /></a>
                             </div>
 
+                            <div className="col-1">
+                                <a href="https://www.linkedin.com/company/medica-tour-fr/" className="link-desk" target="_blank"><FaLinkedinIn /></a>
+                            </div>
+
+                            <div className="col-1">
+                                <a href="https://www.instagram.com/medicatour.fr/?hl=fr" className="link-desk" target="_blank"> <FaInstagram /></a>
+                            </div>
                         </div>
+
+                    </div>
+
+                </div>
 
                     </div>
                 </div>
@@ -235,9 +359,131 @@ const HeaderDesktopComponent = () => {
                                                 </ul>
                                             </div>
                                         </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Dentaire</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Implant dentaire</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Facettes Dentaires</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Blanchiment dents</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Gingivectomie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Couronne Dentaire</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Esthetique</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Acide hyaluronique</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Toxine Botulique</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Traitement Laser</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Mesobotox</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">PRP</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Rhinoplastie Médicale</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Techniques d’Amincissement</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Fils Tenseurs</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Mésothérapie</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Chirurgie corps</Link>
+                                            <div class="dropdown-menu-1 chir-corp">
+
+                                                <div className="row">
+                                                    <div className="col-3">
+                                                        <ul>
+                                                            <li><Link className="text-uppercase sublink fw-bold" href="#">Chirurgie visage</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Blépharoplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Canthopexie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Genioplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lifting visage</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Mini lifting visage</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Otoplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Rhinoplastie</Link></li>
+                                                        </ul>
+                                                    </div>
+
+
+
+                                                    <div className="col-4">
+                                                        <ul>
+                                                            <li><Link className="text-uppercase sublink fw-bold" href="#">Chirurgie silhouette</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">LipoVaser ou Liposuccion Vaser</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Abdominoplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Mini abdominoplastie</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lifting des Bras</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Bodylift Tunise</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">lifting des cuisses</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Augmentation des mollets</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Augmentation fesses</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lipofilling fesses</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Bbl tunisie</Link></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div className="col-3">
+                                                        <ul>
+                                                            <li><Link className="text-uppercase sublink fw-bold" href="#">Chirurgie sein</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Augmentation mammaire</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lifting des seins</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Lipofilling mammaire</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Réduction mammaire</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="#">Gynécomastie</Link></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </li>
+
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Esthétique de l’intimité</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Nymphoplastie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Penoplastie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Vaginoplastie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Gingivectomie</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Hymenoplastie</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">PMA</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Biopsie testiculaire</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Fécondation in vitro</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Insémination artificielle</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Gingivectomie</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Greffe de cheveux</Link>
+                                            <div class="dropdown-menu-1">
+                                                <ul>
+                                                    <li><Link className="text-uppercase sublink" href="#">Greffe poils et cheveux</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Greffe de barbe</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="#">Greffe et implants des sourcils</Link></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+
                                     </ul>
                                 </div>
                             </li>
+
 
                             <li>
                                 <Link to="/" className="text-uppercase link-desk dropbtn">
@@ -247,13 +493,15 @@ const HeaderDesktopComponent = () => {
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li>
-                                            <Link href="#">Procedure</Link>
-                                            <div class="dropdown-menu-1">
-                                                <ul>
-                                                    <li><Link href="#">Pricing</Link></li>
-                                                    <li><Link href="#">Pricing</Link></li>
-                                                </ul>
-                                            </div>
+                                            <Link className="text-uppercase" to="#">Hôtel</Link>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="#">Clinique</Link>
+                                        </li>
+
+                                        <li>
+                                            <Link className="text-uppercase" to="#">Séjour Médical</Link>
                                         </li>
                                     </ul>
                                 </div>

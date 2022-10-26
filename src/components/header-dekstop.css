@@ -29,7 +29,7 @@ hr {
 }
 
 .sublink {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 993px) {
@@ -70,6 +70,7 @@ hr {
 .menu-bar ul li:hover .dropdown-menu {
     display: block;
     position: absolute;
+    width: max-content;
     left: 0;
     top: 100%;
 }
@@ -80,7 +81,12 @@ hr {
 }
 
 .menu-bar ul li:hover .dropdown-menu ul li {
-    margin-left: -17px;
+    margin-left: 0px;
+    margin-bottom: 11px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+    color: #0175aa;
 }
 
 .dropdown-menu-1 {
@@ -109,8 +115,15 @@ hr {
 .dropdown-menu ul li:hover .dropdown-menu-1 {
     display: block;
     position: absolute;
-    left: 150px;
+    left: 109%;
     top: 0;
+    width: max-content;
+    border: 1px solid rgb(134, 126, 126);
+}
+
+.chir-corp{
+    top: -200% !important;
+    width: 800px !important;
 }
 
 .header {
@@ -133,3 +146,12 @@ hr {
 /* .desktop a {
     color: white;
 } */
+
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}

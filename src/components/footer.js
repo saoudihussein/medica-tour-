@@ -1,23 +1,5 @@
 import * as React from "react";
-
 import logo from "../images/logo.webp";
-import slide1 from "../images/slide1.webp"
-import slide2 from "../images/slide2.webp"
-import doctor from "../images/doktorka.png"
-import dr1 from "../images/dr1.webp"
-import dr2 from "../images/dr2.webp"
-import dr3 from "../images/dr3.webp"
-import dr4 from "../images/dr4.webp"
-import dr5 from "../images/dr5.webp"
-import dr6 from "../images/dr6.webp"
-import inter1 from "../images/inter1.webp"
-import inter2 from "../images/inter2.webp"
-import inter3 from "../images/inter3.webp"
-import inter4 from "../images/inter4.webp"
-import inter5 from "../images/inter5.webp"
-import inter6 from "../images/inter6.webp"
-import inter7 from "../images/inter7.webp"
-import inter8 from "../images/inter8.webp"
 import footerImg from "../images/dentalcare-promo-new.png"
 import blog1 from "../images/gynecomastie.webp"
 import blog2 from "../images/chirurgie-paupiere.webp"
@@ -158,22 +140,16 @@ const FooterComponent = () => {
 
 
 
-            <div className="container-fluid  pb-5 pt-2 last-footer-style">
+            <div className="container-fluid  pb-5 pt-5 last-footer-style">
                 <div className="container">
                     <div className="row ">
 
 
-                        <div className="col-sm-12 col-md-4">
-                            <p className="footer-bloc-1-text mt-3">Copyright by BoldThemes 2018. All rights reserved.</p>
-                        </div>
 
-                        <div className="col-sm-12 col-md-4 last-footer pt-3">
-                            <img className="img-fluid img-last-footer" src={logo} alt="logo" />
-                        </div>
 
-                        <div className="col-sm-12 col-md-4">
-                            <p className="footer-bloc-1-text mt-3 float-end">text
-                            </p>
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2  bd-highlight">2019 MedicaTour. All rights reserved.</div>
+                            <div class="ms-auto p-2 bd-highlight"><img className="img-fluid img-last-footer" src={logo} alt="logo" /></div>
                         </div>
 
                     </div>

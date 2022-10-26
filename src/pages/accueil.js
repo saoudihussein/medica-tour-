@@ -47,8 +47,8 @@ const AccueilPage = () => {
                                 </p>
 
                                 <p className="text-start">
-                                    <span className="our-chur"><button type="button" class="btn btn-bt">Nos tarifs</button></span>
-                                    <span className="free-devis"><button type="button" class="btn btn-bt free-devis">Devis gratuit</button></span>
+                                    <span className="our-chur"><button type="button" class="btn btn-bt btn-sec-color">Nos tarifs</button></span>
+                                    <span className="free-devis"><button type="button" class="btn btn-bt free-devis btn-prim-color">Devis gratuit</button></span>
                                 </p>
                             </div>
                         </div>
@@ -63,8 +63,8 @@ const AccueilPage = () => {
                                 </p>
 
                                 <p className="text-start">
-                                    <span className="our-chur"><button type="button" class="btn btn-bt">Nos chirurgiens</button></span>
-                                    <span className="free-devis"><button type="button" class="free-devis btn btn-bt">Devis gratuit</button></span>
+                                    <span className="our-chur"><button type="button" class="btn btn-bt btn-prim-color">Nos chirurgiens</button></span>
+                                    <span className="free-devis"><button type="button" class="free-devis btn btn-bt btn-sec-color">Devis gratuit</button></span>
                                 </p>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ const AccueilPage = () => {
                 </div>
 
                 <div className="container-fluid cont2-style">
-                    <div class="container ">
+                    <div class="container d-none d-sm-none d-md-block">
                         <div className="row">
                             <div className="col-xs-12 col-md-3 pt-5 pb-5 " style={{ backgroundColor: "rgba(0, 179, 204, 1)", textAlign: "center" }}>
                                 <h4 className="btSubTitle">Best dental surgeons</h4>
@@ -107,7 +107,42 @@ const AccueilPage = () => {
                             </div>
 
                         </div>
+                    </div>
 
+                    <div class="d-sm-block d-md-none">
+                        <div className="row">
+                            <div className="col-xs-12 col-md-3 pt-5 pb-5 " style={{ backgroundColor: "rgba(0, 179, 204, 1)", textAlign: "center" }}>
+                                <h4 className="btSubTitle">Best dental surgeons</h4>
+                                <p className="btSubText text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis semper felis.</p>
+                                <button type="button" class="btn btn-bt">Read more</button>
+                            </div>
+
+                            <div className="col-xs-12 col-md-3 pt-5 pb-5" style={{ backgroundColor: "rgba(0, 161, 190, 1)", textAlign: "center" }}>
+                                <h4 className="btSubTitle">Best dental surgeons</h4>
+                                <p className="btSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis semper felis.</p>
+                                <button type="button" class="btn btn-bt">Read more</button>
+                            </div>
+
+                            <div className="col-xs-12 col-md-3 pt-5 pb-5" style={{ backgroundColor: "rgba(0, 135, 170, 1)", textAlign: "center" }}>
+                                <h4 className="btSubTitle">Best dental surgeons</h4>
+                                <p className="btSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis semper felis.</p>
+                                <button type="button" class="btn btn-bt">Read more</button>
+                            </div>
+
+                            <div className="col-xs-12 col-md-3 pt-5 pb-5" style={{ backgroundColor: "rgba(0, 109, 149, 1)", textAlign: "center" }}>
+                                <h4 className="btSubTitle">Best dental surgeons</h4>
+                                <p className="btSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis semper felis.</p>
+                                <button type="button" class="btn btn-bt">Read more</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="container">
                         <div className="row mt-5">
                             <div className="col-md-8 col-sm-12">
                                 <h2 className="section2-title">
@@ -158,31 +193,31 @@ const AccueilPage = () => {
                         <div className="row">
 
                             <div className="col-sm-12 col-md-4 mt-3">
-                                <div class="card card-dr">
+                                <div class="card card-dr h-100">
                                     <img src={dr1} class="card-img-top img-fluid" alt="..." />
                                     <div class="card-body pb-4">
-                                        <h5 class="card-title">Chirurgien de l’obésité</h5>
-                                        <h4 class="card-subtitle mb-2">Dr Mohamed Bourguiba Belgacem</h4>
+                                        <h5 class="">Chirurgien de l’obésité</h5>
+                                        <h4 class="mb-2">Dr Mohamed Bourguiba Belgacem</h4>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-sm-12 col-md-4 mt-3">
-                                <div class="card card-dr">
+                                <div class="card card-dr h-100">
                                     <img src={dr2} class="card-img-top img-fluid" alt="..." />
                                     <div class="card-body pb-4">
-                                        <h5 class="card-title">Chirurgien dentaire</h5>
-                                        <h4 class="card-subtitle mb-2">Dr Jouda Ben Mustapha Sghaier</h4>
+                                        <h5 class="">Chirurgien dentaire</h5>
+                                        <h4 class="mb-2">Dr Jouda Ben Mustapha Sghaier</h4>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-sm-12 col-md-4 mt-3">
-                                <div class="card card-dr">
+                                <div class="card card-dr h-100">
                                     <img src={dr3} class="card-img-top img-fluid" alt="..." />
                                     <div class="card-body pb-4">
-                                        <h5 class="card-title">Chirurgien esthétique</h5>
-                                        <h4 class="card-subtitle mb-2">Dr Mohamed ALI ABDELAALI</h4>
+                                        <h5 class="">Chirurgien esthétique</h5>
+                                        <h4 class=" mb-2">Dr Mohamed ALI ABDELAALI</h4>
                                     </div>
                                 </div>
                             </div>
@@ -192,31 +227,31 @@ const AccueilPage = () => {
                         <div className="row">
 
                             <div className="col-sm-12 col-md-4 mt-3">
-                                <div class="card card-dr">
+                                <div class="card card-dr h-100">
                                     <img src={dr4} class="card-img-top img-fluid" alt="..." />
                                     <div class="card-body pb-4">
-                                        <h5 class="card-title">Chirurgien esthétique</h5>
-                                        <h4 class="card-subtitle mb-2">Dr Hayathem Helali</h4>
+                                        <h5 class="">Chirurgien esthétique</h5>
+                                        <h4 class="mb-2">Dr Hayathem Helali</h4>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-sm-12 col-md-4 mt-3">
-                                <div class="card card-dr">
+                                <div class="card card-dr h-100">
                                     <img src={dr5} class="card-img-top img-fluid" alt="..." />
                                     <div class="card-body pb-4">
-                                        <h5 class="card-title">Traitement de l’infertilité</h5>
-                                        <h4 class="card-subtitle mb-2">Dr Chiheb ben said</h4>
+                                        <h5 class="">Traitement de l’infertilité</h5>
+                                        <h4 class=" mb-2">Dr Chiheb ben said</h4>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-sm-12 col-md-4 mt-3">
-                                <div class="card card-dr">
+                                <div class="card card-dr h-100">
                                     <img src={dr6} class="card-img-top img-fluid" alt="..." />
                                     <div class="card-body pb-4">
-                                        <h5 class="card-title">Médecin esthetique</h5>
-                                        <h4 class="card-subtitle mb-2">Dr Donia Ben Jemia</h4>
+                                        <h5 class="">Médecin esthetique</h5>
+                                        <h4 class="mb-2">Dr Donia Ben Jemia</h4>
                                     </div>
                                 </div>
                             </div>
@@ -372,16 +407,7 @@ const AccueilPage = () => {
                                                         votre séjour esthétique en Tunisie
                                                         vous sera envoyé après avoir fixé un
                                                         rendez-vous avec le chirurgien selon
-                                                        vos disponibilités respectives.</li>
-                                                    <li>Une fois votre réservation est
-                                                        confirmée, nous vous faisons
-                                                        parvenir par mail le planning de
-                                                        votre séjour esthétique en Tunisie.
-                                                    </li>
-                                                    <li>Vous trouverez à votre accueil notre
-                                                        équipe qui vous emmènera vers votre
-                                                        lieu de résidence, la clinique et
-                                                        qui sera à votre service.</li>
+                                                        vos disponibilités.</li>
                                                 </ul>
                                             </p>
                                         </div>
@@ -409,13 +435,7 @@ const AccueilPage = () => {
                                                         fixée au préalable</li>
                                                     <li>Après l’intervention, notre équipe
                                                         sera aux petits soins afin de vous
-                                                        accompagner pendant votre
-                                                        convalescence.</li>
-                                                    <li>Une équipe MedicaTour vous conduira
-                                                        à l’aéroport quelques heures avant
-                                                        votre vol de retour et s’assurera de
-                                                        la bonne démarche de votre
-                                                        embarquement.</li>
+                                                        accompagner.</li>
                                                 </ul>
                                             </p>
                                         </div>
@@ -586,7 +606,7 @@ const AccueilPage = () => {
                                         <img src={inter1} class="card-img-top img-fluid" alt="Chirurgie mammaire" />
                                         <div class="card-body w-100">
                                             <h5 class="card-title inter-title">Chirurgie mammaire</h5>
-                                            <p class="card-text">La chirurgie mammaire est une procédure chirurgicale esthétique ou reconstructive. Le but de cette intervention permet d’ augmenter le volume de la poitrine, de remodeler sa forme, ou enfin d’améliorer la sensation de la poitrine. Elle peut aussi être reconstructive, notamment dans le cas d’une mastectomie (ablation) À partir de 2000 €</p>
+                                            <p class="card-text">La chirurgie mammaire est une procédure chirurgicale esthétique ou reconstructive. Le but de cette intervention permet d’ augmenter le volume de la poitrine, de remodeler sa forme, ou enfin d’améliorer la sensation de la poitrine. Elle peut aussi être reconstructive, notamment dans le cas d’une mastectomie (ablation) À partir de</p>
                                         </div>
                                     </div>
                                 </div>
@@ -595,7 +615,7 @@ const AccueilPage = () => {
                                     <div class="card" >
                                         <img src={inter2} class="card-img-top img-fluid" alt="Chirurgie de la silhouette" />
                                         <div class="card-body w-100">
-                                            <h5 class="card-title inter-title">Chirurgie de la silhouette</h5>
+                                            <h6 class="card-title inter-title">Chirurgie de la silhouette</h6>
                                             <p class="card-text">
                                                 La chirurgie de la silhouette est une intervention chirurgicale esthétique ou reconstructive. Cette chirurgie du corps, permet de redonner à la silhouette des proportions harmonieuses, perdues ou non existantes. Pour ce faire, le chirurgien joue sur les contours du corps: ventre, fesses, bras… À partir de 1700 €
                                             </p>
@@ -609,7 +629,7 @@ const AccueilPage = () => {
                                         <div class="card-body w-100">
                                             <h5 class="card-title inter-title">Intervention esthétique du visage</h5>
                                             <p class="card-text">
-                                                La chirurgie du visage est une procédure chirurgicale permettant de corriger certaines imperfections. C’est également un moyen d’estomper le vieillissement du visage. Les procédures sont multiples, et permettent de contrer de nombreux aspects disgracieux. La chirurgie du visage s’adresse aux patients de tous âges et sexes À partir de 1600€
+                                                La chirurgie du visage est une procédure chirurgicale permettant de corriger certaines imperfections. C’est également un moyen d’estomper le vieillissement du visage. Les procédures sont multiples, et permettent de contrer de nombreux aspects disgracieux. La chirurgie du visage s’adresse aux patients
                                             </p>
                                         </div>
                                     </div>
@@ -621,7 +641,7 @@ const AccueilPage = () => {
                                         <div class="card-body w-100">
                                             <h5 class="card-title inter-title">Traitement de l’infertilité (PMA)</h5>
                                             <p class="card-text">
-                                                Les techniques et pratiques médicales permettant de traiter l’infertilité, sont également appelées PMA (procréation médicalement assistée). La procréation médicalement assistée désigne les solutions thérapeutiques, cliniques et biologiques, tous sexes confondus. MedicaTour propose l’insémination artificielle, la biopsie testiculaire et la fécondation in vitro (FIV) À partir de 1000 €
+                                                Les techniques et pratiques médicales permettant de traiter l’infertilité, sont également appelées PMA (procréation médicalement assistée). La procréation médicalement assistée désigne les solutions thérapeutiques, cliniques et biologiques, tous sexes confondus. MedicaTour propose l’insémination
                                             </p>
                                         </div>
                                     </div>
@@ -636,7 +656,7 @@ const AccueilPage = () => {
                                         <div class="card-body w-100">
                                             <h5 class="card-title inter-title">Chirurgie de l’obésité</h5>
                                             <p class="card-text">
-                                                Les techniques et pratiques médicales permettant de traiter l’infertilité, sont également appelées PMA (procréation médicalement assistée). La procréation médicalement assistée désigne les solutions thérapeutiques, cliniques et biologiques, tous sexes confondus. MedicaTour propose l’insémination artificielle, la biopsie testiculaire et la fécondation in vitro (FIV) À partir de 1000 €
+                                                Les techniques et pratiques médicales permettant de traiter l’infertilité, sont également appelées PMA (procréation médicalement assistée). La procréation médicalement assistée désigne les solutions thérapeutiques, cliniques et biologiques,
                                             </p>
                                         </div>
                                     </div>
@@ -660,7 +680,7 @@ const AccueilPage = () => {
                                         <div class="card-body w-100">
                                             <h5 class="card-title inter-title">Chirugie dentaire</h5>
                                             <p class="card-text">
-                                                Un beau sourire est l’une des premières choses que l’on remarque chez une personne! c’est souvent synonyme de rayonnement et d’assurance que tout le monde cherche à avoir. Donc, pour obtenir ce privilège, MedicaTour, vous propose une offre de chirurgie dentaire Tunisie pour une belle dentition.
+                                                Un beau sourire est l’une des premières choses que l’on remarque chez une personne! c’est souvent synonyme de rayonnement et d’assurance que tout le monde cherche à avoir. Donc, pour obtenir ce privilège, MedicaTour, vous propose une offre
                                             </p>
                                         </div>
                                     </div>
@@ -672,7 +692,7 @@ const AccueilPage = () => {
                                         <div class="card-body w-100">
                                             <h5 class="card-title inter-title">Chirugie Esthétique de l’intimité</h5>
                                             <p class="card-text">
-                                                La chirurgie esthétique de l’intimité consiste à remodeler les lèvres, la vulve ou le pénis. Certaines personnes choisissent cette chirurgie parce qu’elles ne sont pas satisfaites de l’apparence de leurs organes génitaux. Une opération visant à modifier l’apparence des organes génitaux est parfois appelée « chirurgie esthétique des organes génitaux ».
+                                                La chirurgie esthétique de l’intimité consiste à remodeler les lèvres, la vulve ou le pénis. Certaines personnes choisissent cette chirurgie parce qu’elles ne sont pas satisfaites de l’apparence de leurs organes génitaux. Une opération visant à
                                             </p>
                                         </div>
                                     </div>

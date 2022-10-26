@@ -78,6 +78,41 @@
     border-color: transparent !important;
 }
 
-.btn-secondary:active:focus{
-    box-shadow:none !important;
+.btn-secondary:active:focus {
+    box-shadow: none !important;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary:focus {
+    box-shadow: none;
+}
+
+.details {
+    transform: translate3d(-128px, 60px, 0px) !important;
+    width: 300px;
+    margin-left: -170% !important;
+    padding-left: 9px;
+}
+
+
+.link-detail {
+    color: #212529;
+    margin-left: -14px;
+}
+
+
+.header-mob {
+    position: fixed;
+    background-color: #fff;
+    color: black;
+}
+
+
+.header-mob .btn-secondary{
+    color: black;
 }
