@@ -47,7 +47,7 @@ const HeaderDesktopComponent = () => {
                                             <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Bariatrique</Link>
                                             <div class="dropdown-menu-1">
                                                 <ul>
-                                                    <li><Link className="text-uppercase sublink" href="#">Sleeve gastrique</Link></li>
+                                                    <li><Link className="text-uppercase sublink" to="/sleeve-test">Sleeve gastrique</Link></li>
                                                     <li><Link className="text-uppercase sublink" href="#">Anneau gastrique</Link></li>
                                                     <li><Link className="text-uppercase sublink" href="#">By-pass gastrique</Link></li>
                                                     <li><Link className="text-uppercase sublink" href="#">Ballon gastrique</Link></li>
@@ -69,7 +69,7 @@ const HeaderDesktopComponent = () => {
                                         </li>
 
                                         <li>
-                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Esthetique</Link>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Médecine esthetique</Link>
                                             <div class="dropdown-menu-1">
                                                 <ul>
                                                     <li><Link className="text-uppercase sublink" href="#">Acide hyaluronique</Link></li>
@@ -374,7 +374,7 @@ const HeaderDesktopComponent = () => {
                                         </li>
 
                                         <li>
-                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Esthetique</Link>
+                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Médecine esthetique</Link>
                                             <div class="dropdown-menu-1">
                                                 <ul>
                                                     <li><Link className="text-uppercase sublink" href="#">Acide hyaluronique</Link></li>

@@ -13,10 +13,6 @@ const SleevePage = () => {
                     <h1 className="service-title">
                         Sleeve gastrique
                     </h1>
-                    <p className="service-description pt-3">
-                        Quisque eget sem urna. Donec at vestibulum nibh, non bibendum est.
-                        Curabitur eget tincidunt eros.
-                    </p>
                 </div>
             </div>
 

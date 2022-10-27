@@ -400,7 +400,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="">Esthetique</Link>
+                                            <Link className="subLink" to="">Médecine&nbsp;esthetique</Link>
                                         </div>
                                         <div className="col" onClick={() => setEsthetique(!esthetique)} >
                                             {

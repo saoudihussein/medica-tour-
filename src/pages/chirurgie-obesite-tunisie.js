@@ -8,6 +8,7 @@ import chirurgieObesite from "../images/chirurgie-obesite.webp"
 import { FaPhoneAlt, FaRegEnvelope, FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import "./chirurgie-obesite-tunisie.css";
 import Layout from "../layouts/layout";
+import { Link } from "gatsby";
 
 const ChurigPage = () => {
     return (
@@ -30,7 +31,10 @@ const ChurigPage = () => {
                         <div class="card" >
                             <img src={sleeveGastrectomie} class="card-img-top img-fluid" alt="Sleeve gastrique" />
                             <div class="card-body card-body-intervention  w-100">
-                                <h5 class="text-center card-body-title">Sleeve gastrique</h5>
+                                <Link to="/sleeve-test">
+                                    <h5 class="text-center card-body-title">Sleeve gastrique</h5>
+                                </Link>
+
                             </div>
                         </div>
                     </div>

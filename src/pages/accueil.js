@@ -59,7 +59,7 @@ const AccueilPage = () => {
                                     VOTRE SANTÉ EST NOTRE PRIORITÉ
                                 </h1>
                                 <p className="text-start">
-                                    Grâce à son réseau de professionnels, MedicaTour vous offre un accompagnement personnalisé et une équipe médicale des plus compétentes pour vous offrir des soins à la hauteur de vos attentes
+                                    MedicaTour vous offre un accompagnement personnalisé et une équipe médicale des plus compétentes.
                                 </p>
 
                                 <p className="text-start">
