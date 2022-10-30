@@ -22,8 +22,8 @@ const HeaderMobileComponent = () => {
     const [pma, setPMA] = React.useState(false);
     const [greffeChev, setGreffeChev] = React.useState(false);
     const [procedures, setProcedures] = React.useState(false);
-
-    const [header, setHeader] = React.useState(window.scrollY > 300 ? true : false);
+    const [propos, setPropos] = React.useState(false);
+    const [header, setHeader] = React.useState(window.scrollY > 250 ? true : false);
 
 
 
@@ -51,11 +51,11 @@ const HeaderMobileComponent = () => {
                         </div>
 
                         <div className="col-3 pt-3">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div className="dropdown">
+                                <button className="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <BsFillInfoCircleFill size={30} />
                                 </button>
-                                <ul class="dropdown-menu details" aria-labelledby="dropdownMenuButton1">
+                                <ul className="dropdown-menu details" aria-labelledby="dropdownMenuButton1">
                                     <li className="mb-3">
                                         <div className="row flex-style">
                                             <div className="col-2">
@@ -113,8 +113,10 @@ const HeaderMobileComponent = () => {
                                             </div>
 
                                             <div className="col">
-                                                <div className="row">
-                                                    145, RES MAYA "B" - H NOUIRA,
+                                                <div className="row ">
+                                                    <span className="adr">
+                                                        145, RES MAYA "B" - H NOUIRA,
+                                                    </span>
                                                 </div>
 
                                                 <div className="row">
@@ -145,11 +147,11 @@ const HeaderMobileComponent = () => {
                     </div>
 
                     <div className="col-3">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div className="dropdown">
+                            <button className="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <BsFillInfoCircleFill size={30} />
                             </button>
-                            <ul class="dropdown-menu details" aria-labelledby="dropdownMenuButton1">
+                            <ul className="dropdown-menu details" aria-labelledby="dropdownMenuButton1">
                                 <li className="mb-3">
                                     <div className="row flex-style">
                                         <div className="col-2">
@@ -208,7 +210,9 @@ const HeaderMobileComponent = () => {
 
                                         <div className="col">
                                             <div className="row">
-                                                145, RES MAYA "B" - H NOUIRA,
+                                                <span className="adr">
+                                                    145, RES MAYA "B" - H NOUIRA,
+                                                </span>
                                             </div>
 
                                             <div className="row">
@@ -231,7 +235,7 @@ const HeaderMobileComponent = () => {
 
 
                 <div className={isOpen ? "sidenavOpen" : "sidenav"}>
-                    <div className="d-flex flex-row-reverse bd-highlight close-style pt-2" onClick={() => setIsOpen(!isOpen)}>
+                    <div className="d-flex flex-row-reverse bd-highlight close-style pt-2" onKeyDown={() => setIsOpen(!isOpen)} onClick={() => setIsOpen(!isOpen)}>
                         <AiOutlineClose color="black" size={30} />
                     </div>
                     <div className="d-flex justify-content-center">
@@ -242,13 +246,13 @@ const HeaderMobileComponent = () => {
                     <div className="d-flex justify-content-center pt-4">
                         <div className="row">
                             <div className="col">
-                                <a href="https://www.facebook.com/Medicatour.fr" target="_blank"> <FaFacebookF /></a>
+                                <a href="https://www.facebook.com/Medicatour.fr" target="_blank" rel="noreferrer"> <FaFacebookF /></a>
                             </div>
                             <div className="col">
-                                <a href="https://www.linkedin.com/company/medica-tour-fr/" target="_blank"><FaLinkedinIn /></a>
+                                <a href="https://www.linkedin.com/company/medica-tour-fr/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
                             </div>
                             <div className="col">
-                                <a href="https://www.instagram.com/medicatour.fr/?hl=fr" target="_blank"> <FaInstagram /></a>
+                                <a href="https://www.instagram.com/medicatour.fr/?hl=fr" target="_blank" rel="noreferrer"> <FaInstagram /></a>
                             </div>
                         </div>
                     </div>
@@ -256,14 +260,23 @@ const HeaderMobileComponent = () => {
                     <div className="d-flex justify-content-center pt-4">
                         <div className="row">
                             <div className="col">
-                                <Link className="link" to="">Accueil</Link>
+                                <Link className="link" to="#">Accueil</Link>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="d-flex justify-content-center pt-4">
+                        <div className="row">
+                            <div className="col">
+
                             </div>
                         </div>
                     </div>
 
                     <div className="intervetions">
 
-                        <div className="d-flex justify-content-center pt-3">
+                        <div className="d-flex justify-content-center">
                             <div className="row">
                                 <div className="col">
                                     <Link className="link" to="#">Interventions</Link>
@@ -283,7 +296,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="">Bariatrique</Link>
+                                            <Link className="subLink link" to="#">Bariatrique</Link>
                                         </div>
                                         <div className="col" onClick={() => setBariatrique(!bariatrique)} >
                                             {
@@ -302,7 +315,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Sleeve gastrique</Link>
+                                                    <Link className="subLink " to="#">Sleeve gastrique</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -310,7 +323,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Anneau gastrique</Link>
+                                                    <Link className="subLink" to="#">Anneau gastrique</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -318,7 +331,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">By-pass gastrique</Link>
+                                                    <Link className="subLink" to="#">By-pass gastrique</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -326,7 +339,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Ballon gastrique</Link>
+                                                    <Link className="subLink" to="#">Ballon gastrique</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -338,7 +351,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="">Denatire</Link>
+                                            <Link className="subLink link" to="#">Denatire</Link>
                                         </div>
                                         <div className="col" onClick={() => setDenatire(!denatire)} >
                                             {
@@ -357,7 +370,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Implant dentaire</Link>
+                                                    <Link className="subLink" to="#">Implant dentaire</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -365,7 +378,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Facettes Dentaires</Link>
+                                                    <Link className="subLink" to="#">Facettes Dentaires</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -373,7 +386,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Blanchiment dents</Link>
+                                                    <Link className="subLink" to="#">Blanchiment dents</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -381,7 +394,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Gingivectomie</Link>
+                                                    <Link className="subLink" to="#">Gingivectomie</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -389,7 +402,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Couronne Dentaire</Link>
+                                                    <Link className="subLink" to="#">Couronne Dentaire</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -400,7 +413,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="">Médecine&nbsp;esthetique</Link>
+                                            <Link className="subLink link" to="#">Médecine&nbsp;esthetique</Link>
                                         </div>
                                         <div className="col" onClick={() => setEsthetique(!esthetique)} >
                                             {
@@ -419,7 +432,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Acide hyaluronique</Link>
+                                                    <Link className="subLink" to="#">Acide hyaluronique</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -427,7 +440,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Toxine Botulique</Link>
+                                                    <Link className="subLink" to="#">Toxine Botulique</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -435,7 +448,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Traitement Laser</Link>
+                                                    <Link className="subLink" to="#">Traitement Laser</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -443,7 +456,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Mesobotox</Link>
+                                                    <Link className="subLink" to="#">Mesobotox</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -451,7 +464,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">PRP</Link>
+                                                    <Link className="subLink" to="#">PRP</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -459,7 +472,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Rhinoplastie Médicale</Link>
+                                                    <Link className="subLink" to="#">Rhinoplastie Médicale</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -467,7 +480,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Techniques d’Amincissement</Link>
+                                                    <Link className="subLink" to="#">Techniques d’Amincissement</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -475,7 +488,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Fils Tenseurs</Link>
+                                                    <Link className="subLink" to="#">Fils Tenseurs</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -483,7 +496,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Mésothérapie</Link>
+                                                    <Link className="subLink" to="#">Mésothérapie</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -495,7 +508,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="">Chirurgie&nbsp;corps</Link>
+                                            <Link className="subLink link" to="#">Chirurgie&nbsp;corps</Link>
                                         </div>
                                         <div className="col" onClick={() => setChirCorps(!chirCorps)} >
                                             {
@@ -514,7 +527,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Chirurgie visage</Link>
+                                                    <Link className="subLink link" to="#">Chirurgie visage</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -522,7 +535,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Chirurgie sein</Link>
+                                                    <Link className="subLink link" to="#">Chirurgie sein</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -530,7 +543,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Chirurgie silhouette</Link>
+                                                    <Link className="subLink link" to="#">Chirurgie silhouette</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -540,7 +553,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="">Esthétique&nbsp;de&nbsp;l’intimité</Link>
+                                            <Link className="subLink link" to="#">Esthétique&nbsp;de&nbsp;l’intimité</Link>
                                         </div>
                                         <div className="col" onClick={() => setEstheInti(!estheInti)} >
                                             {
@@ -559,7 +572,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Nymphoplastie</Link>
+                                                    <Link className="subLink" to="#">Nymphoplastie</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -567,7 +580,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Penoplastie</Link>
+                                                    <Link className="subLink" to="#">Penoplastie</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -575,7 +588,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Vaginoplastie</Link>
+                                                    <Link className="subLink" to="#">Vaginoplastie</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -583,7 +596,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Hymenoplastie</Link>
+                                                    <Link className="subLink" to="#">Hymenoplastie</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -593,7 +606,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="">PMA</Link>
+                                            <Link className="subLink link" to="#">PMA</Link>
                                         </div>
                                         <div className="col" onClick={() => setPMA(!pma)} >
                                             {
@@ -611,7 +624,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Biopsie testiculaire</Link>
+                                                    <Link className="subLink" to="#">Biopsie testiculaire</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -619,7 +632,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Fécondation in vitro</Link>
+                                                    <Link className="subLink" to="#">Fécondation in vitro</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -627,7 +640,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Insémination artificielle</Link>
+                                                    <Link className="subLink" to="#">Insémination artificielle</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -638,7 +651,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="">Greffe&nbsp;de&nbsp;cheveux</Link>
+                                            <Link className="subLink link" to="#">Greffe&nbsp;de&nbsp;cheveux</Link>
                                         </div>
                                         <div className="col" onClick={() => setGreffeChev(!greffeChev)} >
                                             {
@@ -656,7 +669,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Greffe poils et cheveux</Link>
+                                                    <Link className="subLink" to="#">Greffe poils et cheveux</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -664,7 +677,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Greffe de barbe</Link>
+                                                    <Link className="subLink" to="#">Greffe de barbe</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -672,7 +685,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink" to="">Greffe et implants des sourcils</Link>
+                                                    <Link className="subLink" to="#">Greffe et implants des sourcils</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -684,62 +697,7 @@ const HeaderMobileComponent = () => {
 
                     </div>
 
-                    <div className="procedures">
-
-                        <div className="d-flex justify-content-center pt-3">
-                            <div className="row">
-                                <div className="col">
-                                    <Link className="link" to="#">Procedures</Link>
-                                </div>
-                                <div className="col" onClick={() => setProcedures(!procedures)} >
-                                    {
-                                        procedures ?
-                                            <span className="angleIcon"><FaAngleUp color="black" /></span> :
-                                            <span className="angleIcon"><FaAngleDown color="black" /></span>
-                                    }
-                                </div>
-                            </div>
-                        </div>
-                        {
-                            !procedures ||
-                            <>
-                                <div className="d-flex justify-content-center pt-3">
-                                    <div className="row">
-                                        <div className="col">
-                                            <Link className="subLink" to="">Hôtel</Link>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="d-flex justify-content-center  pt-3">
-                                    <div className="row">
-                                        <div className="col">
-                                            <Link className="subLink" to="">Clinique</Link>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="d-flex justify-content-center  pt-3">
-                                    <div className="row">
-                                        <div className="col">
-                                            <Link className="subLink" to=""><div className="d-flex justify-content-center">
-                                                <div className="row">
-                                                    <div className="col">
-                                                        <Link className="subLink" to="">Séjour Médical</Link>
-                                                    </div>
-                                                </div>
-                                            </div></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </>
-
-                        }
-
-                    </div>
-
-
-                    <div className="tarif">
+                    <div className="devis">
                         <div className="d-flex justify-content-center  pt-3">
                             <div className="row">
                                 <div className="col">
@@ -749,24 +707,99 @@ const HeaderMobileComponent = () => {
                         </div>
                     </div>
 
-                    <div className="tarif">
-                        <div className="d-flex justify-content-center  pt-3">
-                            <div className="row">
-                                <div className="col">
-                                    <Link className="link" to="#">Tarif</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="apropos">
-                        <div className="d-flex justify-content-center  pt-3">
+
+                        <div className="d-flex justify-content-center pt-3">
                             <div className="row">
                                 <div className="col">
                                     <Link className="link" to="#">A&nbsp;propos</Link>
                                 </div>
+                                <div className="col" onClick={() => setPropos(!propos)} >
+                                    {
+                                        propos ?
+                                            <span className="angleIcon"><FaAngleUp color="black" /></span> :
+                                            <span className="angleIcon"><FaAngleDown color="black" /></span>
+                                    }
+                                </div>
                             </div>
                         </div>
+                        {
+                            !propos ||
+                            <>
+                                <div className="d-flex justify-content-center pt-3">
+                                    <div className="row">
+                                        <div className="col">
+                                            <Link className="subLink" to="#">Nos&nbsp;chirurgiens</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="d-flex justify-content-center  pt-3">
+                                    <div className="row">
+                                        <div className="col">
+                                            <Link className="subLink" to="#">Tarifs</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="procedures">
+
+                                    <div className="d-flex justify-content-center pt-3">
+                                        <div className="row">
+                                            <div className="col">
+                                                <Link className="link" to="#">Procedures</Link>
+                                            </div>
+                                            <div className="col" onClick={() => setProcedures(!procedures)} >
+                                                {
+                                                    procedures ?
+                                                        <span className="angleIcon"><FaAngleUp color="black" /></span> :
+                                                        <span className="angleIcon"><FaAngleDown color="black" /></span>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {
+                                        !procedures ||
+                                        <>
+                                            <div className="d-flex justify-content-center pt-3">
+                                                <div className="row">
+                                                    <div className="col">
+                                                        <Link className="subLink" to="#">Hôtel</Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="d-flex justify-content-center  pt-3">
+                                                <div className="row">
+                                                    <div className="col">
+                                                        <Link className="subLink" to="#">Clinique</Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="d-flex justify-content-center  pt-3">
+                                                <div className="row">
+                                                    <div className="col">
+                                                        <Link className="subLink" to="#"><div className="d-flex justify-content-center">
+                                                            <div className="row">
+                                                                <div className="col">
+                                                                    <Link className="subLink" to="#">Séjour Médical</Link>
+                                                                </div>
+                                                            </div>
+                                                        </div></Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </>
+
+                                    }
+
+                                </div>
+
+                            </>
+
+                        }
+
                     </div>
 
                     <div className="blog">
@@ -788,6 +821,7 @@ const HeaderMobileComponent = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 

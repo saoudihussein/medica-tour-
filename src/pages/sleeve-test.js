@@ -18,7 +18,7 @@ const SleevePage = () => {
 
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -31,7 +31,7 @@ const SleevePage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             L’opération de sleeve gastrique en Tunisie ou gastrectomie longitudinale est une intervention bariatrique de plus en plus pratiquée pour le traitement chirurgical de l’obésité morbide. En Tunisie elle se situe actuellement au deuxième rang après le bypass gastrique.
 
                             L’opération sleeve gastrectomie en Tunisie consiste à prélever les deux tiers de l’estomac avec un dispositif d’agrafage. Cela peut être fait par laparoscopie (chirurgie en trou de serrure). Cette technique n’est pas réversible.
@@ -44,7 +44,7 @@ const SleevePage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -52,15 +52,15 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -73,7 +73,7 @@ const SleevePage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             La sleeve gastrectomie (réduction estomac) facilite non seulement la perte de poids sainement en réduisant la taille, mais aussi la forme de l’estomac.
 
                             Au fil du temps, avec une consommation excessive de nourriture, l’estomac s’étire sur une trop grande taille. Cela peut donc laisser les patients incapables de se sentir satisfaits, même après avoir mangé de gros repas riches en calories.
@@ -83,7 +83,7 @@ const SleevePage = () => {
                             Pendant cette opération :
                         </p>
 
-                        <ul class="lead">
+                        <ul className="lead">
                             <li>Votre chirurgien pratique 2 à 5 petites coupures (incisions) dans votre ventre.</li>
                             <li>La caméra et les instruments nécessaires à l’opération sont introduits par ces incisions. La caméra est reliée à un moniteur vidéo dans la salle d’opération. Cela permet au chirurgien de voir l’intérieur de votre ventre pendant l’opération.</li>
                             <li>Un gaz inoffensif est injecté dans le ventre pour le dilater. Cela donne au chirurgien de la place pour travailler.</li>
@@ -93,7 +93,7 @@ const SleevePage = () => {
                             <li>La lunette et les autres outils sont retirés. Les coupures sont fermées par des points de suture.</li>
                         </ul>
 
-                        <p class="lead">
+                        <p className="lead">
                             La sleeve gastrectomie ou encore sleeve gastrique préserve le pylore, la valve qui régule la vidange de l’estomac. Cela procure aux patients une sensation de satiété après avoir consommé des quantités relativement faibles de nourriture, entraînant donc une réduction spectaculaire de l’apport calorique total du patient.
                         </p>
                     </div>
@@ -102,7 +102,7 @@ const SleevePage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -110,15 +110,15 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -131,10 +131,10 @@ const SleevePage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             La sleeve gastrectomie en Tunisie est une excellente opportunité financière comme le démontre le tableau de prix ci-dessous.
                         </p>
-                        <table class="table table-bordered border-primary">
+                        <table className="table table-bordered border-primary">
                             <thead>
                                 <tr>
                                     <th scope="col">Intervention</th>
@@ -150,11 +150,11 @@ const SleevePage = () => {
                                 </tr>
                             </tbody>
                         </table>
-                        <p class="lead">
+                        <p className="lead">
                             Le prix inclut d’autres avantages comme:
                         </p>
 
-                        <ul class="lead">
+                        <ul className="lead">
                             <li>L’accueil dès votre arrivée à l’aéroport</li>
                             <li>La prise en charge intégrale à la clinique</li>
                             <li>Les honoraires du chirurgien et de l’anesthésiste</li>
@@ -167,7 +167,7 @@ const SleevePage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -175,15 +175,15 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -196,7 +196,7 @@ const SleevePage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             L’opération sleeve est une chirurgie bariatrique recommandée pour les patients qui présentent les caractéristiques suivantes :
                         </p>
 
@@ -259,19 +259,19 @@ const SleevePage = () => {
 
                                 <div className=" col-4">
                                     <p className="footer-bloc-1-text mt-3 ">
-                                        <a href="https://www.facebook.com/Medicatour.fr" target="_blank"> <FaFacebookF /></a>
+                                        <a href="https://www.facebook.com/Medicatour.fr" target="_blank" rel="noreferrer"> <FaFacebookF /></a>
                                     </p>
                                 </div>
 
                                 <div className="col-4">
                                     <p className="footer-bloc-1-text mt-3">
-                                        <a href="https://www.linkedin.com/company/medica-tour-fr/" target="_blank"><FaLinkedinIn /></a>
+                                        <a href="https://www.linkedin.com/company/medica-tour-fr/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
                                     </p>
                                 </div>
 
                                 <div className="col-4">
                                     <p className="footer-bloc-1-text mt-3">
-                                        <a href="https://www.instagram.com/medicatour.fr/?hl=fr" target="_blank"> <FaInstagram /></a>
+                                        <a href="https://www.instagram.com/medicatour.fr/?hl=fr" target="_blank" rel="noreferrer"> <FaInstagram /></a>
                                     </p>
                                 </div>
 
@@ -284,7 +284,7 @@ const SleevePage = () => {
 
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -297,29 +297,29 @@ const SleevePage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             Effectuée sous anesthésie générale et par cœlioscopie,
                             le praticien procède aux étapes suivantes pour effectuer
                             l’intervention de sleeve gastrectomie en Tunisie qui dure en moyenne 1h30 à 2h :
                         </p>
 
                         <div className="row">
-                            <div class="col p-5 lead"><span style={{ fontSize: "30px", color: "rgb(6, 185, 210)", marginRight: "20px;" }}>1</span>&nbsp;
+                            <div className="col p-5 lead"><span style={{ fontSize: "30px", color: "rgb(6, 185, 210)", marginRight: "20px;" }}>1</span>&nbsp;
                                 Pour commencer, on réalise 5 incisions (5 à 15 mm) dans la partie supérieure de l’abdomen,
                                 Ensuite on insère une caméra connectée à un moniteur vidéo et une pince d’agrafages.
                             </div>
 
-                            <div class="col p-5 lead"><span style={{ fontSize: "30px", color: "rgb(6, 185, 210)", marginRight: "20px;" }}>2</span>&nbsp;
+                            <div className="col p-5 lead"><span style={{ fontSize: "30px", color: "rgb(6, 185, 210)", marginRight: "20px;" }}>2</span>&nbsp;
                                 Par la suite, le chirurgien effectue une ablation des 2/3 de l’estomac du patient. Il forme ainsi un tube entre l’œsophage et l’antre gastrique
                                 afin de permettre ultérieurement l’évacuation rapide des aliments dans l’intestin grêle
                             </div>
 
-                            <div class="col p-5 lead"><span style={{ fontSize: "30px", color: "rgb(6, 185, 210)", marginRight: "20px;" }}>3</span>&nbsp;
+                            <div className="col p-5 lead"><span style={{ fontSize: "30px", color: "rgb(6, 185, 210)", marginRight: "20px;" }}>3</span>&nbsp;
                                 En dernier lieu, une légère incision (moins de 10 cm) sera réalisée pour sortir le segment d’estomac coupé.
                             </div>
                         </div>
 
-                        <p class="lead">
+                        <p className="lead">
                             Si vous fumez, vous devez arrêter plusieurs semaines avant l’opération et ne pas recommencer à fumer après l’opération. Fumer ralentit le rétablissement
                             et augmente le risque de problèmes. Demandez à votre prestataire de soins de vous aider à arrêter de fumer.
                         </p>
@@ -329,7 +329,7 @@ const SleevePage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -337,15 +337,15 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -358,7 +358,7 @@ const SleevePage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             La sleeve gastrique en Tunisie présente des avantages qu’il importe de souligner :
 
                             Une perte de poids considérable en 12 mois (70% de l’excès de poids éliminé), ainsi qu’un risque opératoire très faible :
@@ -381,7 +381,7 @@ const SleevePage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -389,15 +389,15 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -410,7 +410,7 @@ const SleevePage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             En guise de conclusion, il est recommandé d’avoir un contrôle postopératoire immédiat et un suivi régulier à long terme, en particulier une consultation avec le médecin nutritionniste tous les 3 mois puis au minimum tous les 6 mois.
                         </p>
                     </div>
@@ -419,7 +419,7 @@ const SleevePage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -427,15 +427,15 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -444,21 +444,21 @@ const SleevePage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             La perte de poids finale peut ne pas être aussi importante qu’avec le bypass gastrique. Cela peut être suffisant pour de nombreuses personnes. Discutez avec votre chirurgien de l’intervention qui vous convient le mieux.
                         </p>
-                        <p class="lead">
+                        <p className="lead">
                             La perte de poids est généralement plus lente qu’avec un bypass gastrique. Vous devriez continuer à perdre du poids pendant 2 à 3 ans.
                         </p>
-                        <p class="lead">
+                        <p className="lead">
                             Perdre suffisamment de poids après l’opération peut améliorer de nombreux problèmes médicaux dont vous pourriez souffrir. Les conditions qui peuvent s’améliorer sont l’asthme, le diabète de type 2, l’arthrite, l’hypertension artérielle, l’apnée obstructive du sommeil, l’hypercholestérolémie et la maladie gastro-œsophagienne (RGO).
                         </p>
 
-                        <p class="lead">
+                        <p className="lead">
                             Le fait de peser moins devrait également vous permettre de vous déplacer et d’accomplir vos activités quotidiennes beaucoup plus facilement.
                         </p>
 
-                        <p class="lead">
+                        <p className="lead">
                             Cette chirurgie ne constitue pas à elle seule une solution pour perdre du poids. Elle peut vous entraîner à manger moins, mais vous devez encore faire une grande partie du travail. Pour perdre du poids et éviter les complications liées à l’intervention, vous devrez suivre les directives en matière d’exercice et d’alimentation que vous donneront votre chirurgien et votre diététicien.
                         </p>
                     </div>
@@ -467,7 +467,7 @@ const SleevePage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -475,8 +475,8 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>

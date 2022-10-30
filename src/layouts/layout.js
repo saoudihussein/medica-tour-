@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
             <HeaderDesktopComponent />
             {children}
             <FooterComponent />
-            <a class="whats-app" href="https://api.whatsapp.com/send?phone=+21622543410&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." target="_blank">
+            <a className="whats-app" href="https://api.whatsapp.com/send?phone=+21622543410&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." target="_blank" rel="noreferrer">
                 <FaWhatsapp />
             </a>
         </>

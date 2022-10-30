@@ -71,7 +71,6 @@
     margin-left: 25px !important;
 }
 
-
 .btn-secondary:hover {
     color: #fff;
     background-color: transparent !important;
@@ -94,17 +93,20 @@
 
 .details {
     transform: translate3d(-128px, 60px, 0px) !important;
-    width: 300px;
-    margin-left: -170% !important;
+    width: max-content;
+    margin-left: -230% !important;
     padding-left: 9px;
+    margin-right: 10px !important;
 }
 
+.adr{
+    margin-right: 5px !important;
+}
 
 .link-detail {
     color: #212529;
     margin-left: -14px;
 }
-
 
 .header-mob {
     position: fixed;
@@ -112,7 +114,14 @@
     color: black;
 }
 
-
-.header-mob .btn-secondary{
+.header-mob .btn-secondary {
     color: black;
 }
+
+
+
+.btn-secondary:focus {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+

@@ -4,8 +4,6 @@ import byPassGastrique from "../images/by-pass-gastrique.webp"
 import anneauGastrique from "../images/anneau-gastrique.webp"
 import ballonGastrique from "../images/ballon-gastrique.png"
 import chirurgieObesite from "../images/chirurgie-obesite.webp"
-
-import { FaPhoneAlt, FaRegEnvelope, FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import "./chirurgie-obesite-tunisie.css";
 import Layout from "../layouts/layout";
 import { Link } from "gatsby";
@@ -28,11 +26,11 @@ const ChurigPage = () => {
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-sm-12 col-md-3 pt-2">
-                        <div class="card" >
-                            <img src={sleeveGastrectomie} class="card-img-top img-fluid" alt="Sleeve gastrique" />
-                            <div class="card-body card-body-intervention  w-100">
-                                <Link to="/sleeve-test">
-                                    <h5 class="text-center card-body-title">Sleeve gastrique</h5>
+                        <div className="card" >
+                            <img src={sleeveGastrectomie} className="card-img-top img-fluid" alt="Sleeve gastrique" />
+                            <div className="card-body card-body-intervention  w-100">
+                                <Link to="/sleeve-test" className="link-interv">
+                                    <h5 className="text-center card-body-title">Sleeve gastrique</h5>
                                 </Link>
 
                             </div>
@@ -40,28 +38,28 @@ const ChurigPage = () => {
                     </div>
 
                     <div className="col-sm-12 col-md-3 pt-2">
-                        <div class="card" >
-                            <img src={byPassGastrique} class="card-img-top img-fluid" alt="Bypass gastrique" />
-                            <div class="card-body card-body-intervention  w-100">
-                                <h5 class="text-center card-body-title">Bypass gastrique</h5>
+                        <div className="card" >
+                            <img src={byPassGastrique} className="card-img-top img-fluid" alt="Bypass gastrique" />
+                            <div className="card-body card-body-intervention  w-100">
+                                <h5 className="text-center card-body-title">Bypass gastrique</h5>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-sm-12 col-md-3 pt-2">
-                        <div class="card" >
-                            <img src={ballonGastrique} class="card-img-top img-fluid" alt="sleeve-gastrectomie.webp" />
-                            <div class="card-body card-body-intervention  w-100">
-                                <h5 class="text-center card-body-title">Ballon gastrique</h5>
+                        <div className="card" >
+                            <img src={ballonGastrique} className="card-img-top img-fluid" alt="sleeve-gastrectomie.webp" />
+                            <div className="card-body card-body-intervention  w-100">
+                                <h5 className="text-center card-body-title">Ballon gastrique</h5>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-sm-12 col-md-3 pt-2">
-                        <div class="card" >
-                            <img src={anneauGastrique} class="card-img-top img-fluid" alt="Anneau gastrique" />
-                            <div class="card-body card-body-intervention  w-100">
-                                <h5 class=" text-center card-body-title">Anneau gastrique</h5>
+                        <div className="card" >
+                            <img src={anneauGastrique} className="card-img-top img-fluid" alt="Anneau gastrique" />
+                            <div className="card-body card-body-intervention  w-100">
+                                <h5 className=" text-center card-body-title">Anneau gastrique</h5>
                             </div>
                         </div>
                     </div>
@@ -69,7 +67,7 @@ const ChurigPage = () => {
             </div>
 
             <div className="container-fluid pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -84,33 +82,33 @@ const ChurigPage = () => {
 
                         <div className="row">
                             <div className="col-sm-12 col-md-9">
-                                <p class="lead">
+                                <p className="lead">
                                     La chirurgie bariatrique (aussi appelée chirurgie de la perte de poids)
                                     fait partie d’un programme multidisciplinaire qui comprend une alimentation
                                     saine, de l’exercice physique et le traitement d’affections telles que le
                                     diabète de type 2 ou les maladies thyroïdiennes.
                                 </p>
 
-                                <p class="lead">
+                                <p className="lead">
                                     Il existe plusieurs types de chirurgie bariatrique – pontage gastrique, anneau gastrique et autres –
                                     qui ont tous le même objectif final : réduire la quantité de nourriture que votre corps peut absorber
                                     afin de favoriser la perte de poids. La chirurgie bariatrique est une procédure médicale majeure
                                     utilisée pour vous aider à éviter les complications de santé liées à l’obésité, et non pour des raisons esthétiques.
                                 </p>
 
-                                <p class="lead">
+                                <p className="lead">
                                     La chirurgie d’obésité en Tunisie permet de lutter contre
                                     le surpoids pour les personnes présentant une forte surcharge pondérale.
                                 </p>
                             </div>
 
                             <div className="col-sm-12 col-md-3">
-                                <img loading="lazy" class="img-fluid"
+                                <img loading="lazy" className="img-fluid"
                                     src={chirurgieObesite}
                                     alt="chirurgie obesite" width="300" height="200" />
                             </div>
 
-                            <p class="lead">
+                            <p className="lead">
                                 On parle d’obésité importante : c’est-à-dire une IMC supérieur ou égal à 35 kg/m² ou une obésité sévère : soit un IMC supérieur ou égal à 45 kg/m².
 
                                 En effet, l’obésité se définit comme accumulation excessive de graisse dans votre organisme, ce qui représente un grand risque pour la santé.
@@ -129,7 +127,7 @@ const ChurigPage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -137,15 +135,15 @@ const ChurigPage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="container-fluid  pb-5 pt-2">
-                <div class="container ">
+                <div className="container ">
                     <div className="row">
 
                         <h1 className="text-center mt-5 pt-5">
@@ -158,7 +156,7 @@ const ChurigPage = () => {
                             </span>
                         </h1>
 
-                        <p class="lead">
+                        <p className="lead">
                             En effet, ces termes reflètent l’impact de ces opérations sur le poids des patients et la santé de leur métabolisme (transformation des aliments en énergie). L’exercice physique et le régime alimentaire ne suffisent pas à traiter efficacement les personnes souffrant d’obésité extrême et excessive.
 
                             En plus de leur capacité à traiter l’obésité, ces opérations traitent efficacement le diabète, l’hypertension artérielle, l’apnée du sommeil et l’hypercholestérolémie, parmi de nombreuses autres maladies.
@@ -171,7 +169,7 @@ const ChurigPage = () => {
 
             {/* free devis block */}
             <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div class="container pt-4">
+                <div className="container pt-4">
 
                     <div className="row d-flex justify-content-center">
                         <div className="col-sm-12 col-md-6 text-center">
@@ -179,8 +177,8 @@ const ChurigPage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" class="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" class="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
                         </div>
                     </div>
                 </div>

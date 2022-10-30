@@ -32,8 +32,9 @@
 }
 
 .img-last-footer {
-    height: 20px;
-    width: 200px;
+    height: 25px;
+    width: 100px;
+    object-fit: fill !important;
 }
 
 .last-footer-style {

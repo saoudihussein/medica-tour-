@@ -15,6 +15,12 @@
 }
 
 
+.link-interv:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
 .intern-page-style {
     margin-top: 15%;
 }
