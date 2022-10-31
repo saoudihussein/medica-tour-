@@ -27,11 +27,13 @@ const ChirurgiensPage = () => {
 
                             <div className="col-sm-12 col-md-4 mt-3">
                                 <div className="card card-dr h-100">
-                                    <img src={dr1} className="card-img-top img-fluid" alt="..." />
+                                    <Link to="/dr-profile" className="link-cv">
+                                        <img src={dr1} className="card-img-top img-fluid" alt="..." />
+                                    </Link>
                                     <div className="card-body pb-4">
                                         <h5 className="">Chirurgien de l’obésité
                                             <span className="float-end">
-                                                <Link to="#" className="link-cv">
+                                                <Link to="/dr-profile" className="link-cv">
                                                     <FaFileInvoice />
                                                 </Link>
                                             </span>
