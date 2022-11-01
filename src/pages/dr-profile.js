@@ -1,6 +1,5 @@
 import * as React from "react";
 import dr1 from "../images/dr1.webp"
-import { FaFileInvoice } from 'react-icons/fa';
 import "./dr-profile.css";
 import Layout from "../layouts/layout";
 
@@ -26,7 +25,7 @@ const DrProfilePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid pt-5">
+                <div className="container-fluid pt-5 pb-5">
                     <div className="container ">
                         <div className="row">
                             <div className="col-sm-12 col-md-4 mt-3 dr-dip-form">

@@ -1,8 +1,25 @@
 .doctor-profile-img{
     height: 212px !important;
     width: -webkit-fill-available !important;
+    border-radius: 5px;
 } 
 
 .dr-dip-form h3{
     color: #00b3cc;
+}
+
+
+
+
+
+@media screen and (max-width: 993px) {
+    .dr-dip-form{
+        border-bottom: 3px solid rgba(0,0,0,.1);
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .dr-dip-form{
+        border-right: 3px solid rgba(0,0,0,.1);
+    }
 }

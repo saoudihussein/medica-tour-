@@ -207,10 +207,10 @@ const HeaderDesktopComponent = () => {
 
 
                                                 <li>
-                                                    <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Procédure</Link>
+                                                    <Link className="text-uppercase" to="/procedure/">Procédure</Link>
                                                     <div className="dropdown-menu-1">
                                                         <ul>
-                                                            <li><Link className="text-uppercase sublink" href="#">Hôtel</Link></li>
+                                                            <li><Link className="text-uppercase sublink" href="/hotel-el-mouradi-gammarth/">Hôtel</Link></li>
                                                             <li><Link className="text-uppercase sublink" href="#">Clinique</Link></li>
                                                             <li><Link className="text-uppercase sublink" href="#">Séjour Médical</Link></li>
                                                         </ul>
@@ -221,13 +221,13 @@ const HeaderDesktopComponent = () => {
                                     </li>
 
                                     <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                        <Link to="/blogs/" className="text-uppercase link-desk dropbtn">
                                             Blog
                                         </Link>
                                     </li>
 
                                     <li>
-                                        <Link to="/" className="text-uppercase link-desk dropbtn">
+                                        <Link to="/contact/" className="text-uppercase link-desk dropbtn">
                                             Contact
                                         </Link>
                                     </li>
@@ -511,10 +511,10 @@ const HeaderDesktopComponent = () => {
 
 
                                         <li>
-                                            <Link className="text-uppercase" to="chirurgie-obesite-tunisie">Procédure</Link>
+                                            <Link className="text-uppercase" to="/procedure/">Procédure</Link>
                                             <div className="dropdown-menu-1">
                                                 <ul>
-                                                    <li><Link className="text-uppercase sublink" href="#">Hôtel</Link></li>
+                                                    <li><Link className="text-uppercase sublink" href="/hotel-el-mouradi-gammarth/">Hôtel</Link></li>
                                                     <li><Link className="text-uppercase sublink" href="#">Clinique</Link></li>
                                                     <li><Link className="text-uppercase sublink" href="#">Séjour Médical</Link></li>
                                                 </ul>
@@ -525,13 +525,13 @@ const HeaderDesktopComponent = () => {
                             </li>
 
                             <li>
-                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                <Link to="/blogs/" className="text-uppercase link-desk dropbtn">
                                     Blog
                                 </Link>
                             </li>
 
                             <li>
-                                <Link to="/" className="text-uppercase link-desk dropbtn">
+                                <Link to="/contact/" className="text-uppercase link-desk dropbtn">
                                     Contact
                                 </Link>
                             </li>

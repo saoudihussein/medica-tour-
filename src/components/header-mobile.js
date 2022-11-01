@@ -50,7 +50,7 @@ const HeaderMobileComponent = () => {
                             </Link>
                         </div>
 
-                        <div className="col-3 pt-3">
+                        <div className="col-3 pt-2">
                             <div className="dropdown">
                                 <button className="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <BsFillInfoCircleFill size={30} />
@@ -135,7 +135,7 @@ const HeaderMobileComponent = () => {
             }
 
 
-            <div className="container-fluid mobile pt-3">
+            <div className="container-fluid mobile pt-2">
 
                 <div className="row">
                     <div className="col-9">
@@ -235,7 +235,7 @@ const HeaderMobileComponent = () => {
 
 
                 <div className={isOpen ? "sidenavOpen" : "sidenav"}>
-                    <div className="d-flex flex-row-reverse bd-highlight close-style pt-2" onKeyDown={() => setIsOpen(!isOpen)} onClick={() => setIsOpen(!isOpen)}>
+                    <div className="d-flex flex-row-reverse bd-highlight close-style pt-2" role={"button"} onKeyDown={() => setIsOpen(!isOpen)} onClick={() => setIsOpen(!isOpen)}>
                         <AiOutlineClose color="black" size={30} />
                     </div>
                     <div className="d-flex justify-content-center">
@@ -260,7 +260,7 @@ const HeaderMobileComponent = () => {
                     <div className="d-flex justify-content-center pt-4">
                         <div className="row">
                             <div className="col">
-                                <Link className="link" to="#">Accueil</Link>
+                                <Link className="link" to="/">Accueil</Link>
                             </div>
                         </div>
                     </div>
@@ -296,7 +296,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink link" to="#">Bariatrique</Link>
+                                            <Link className="subLink link" to="/chirurgie-obesite-tunisie/">Bariatrique</Link>
                                         </div>
                                         <div className="col" onClick={() => setBariatrique(!bariatrique)} >
                                             {
@@ -315,7 +315,7 @@ const HeaderMobileComponent = () => {
                                         <div className="d-flex justify-content-center pt-3">
                                             <div className="row">
                                                 <div className="col">
-                                                    <Link className="subLink " to="#">Sleeve gastrique</Link>
+                                                    <Link className="subLink " to="/sleeve-test/">Sleeve gastrique</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -729,7 +729,7 @@ const HeaderMobileComponent = () => {
                                 <div className="d-flex justify-content-center pt-3">
                                     <div className="row">
                                         <div className="col">
-                                            <Link className="subLink" to="#">Nos&nbsp;chirurgiens</Link>
+                                            <Link className="subLink" to="/chirurgiens-esthetiques-tunisie/">Nos&nbsp;chirurgiens</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -747,7 +747,7 @@ const HeaderMobileComponent = () => {
                                     <div className="d-flex justify-content-center pt-3">
                                         <div className="row">
                                             <div className="col">
-                                                <Link className="link" to="#">Procedures</Link>
+                                                <Link className="link" to="/procedure/">Procédures</Link>
                                             </div>
                                             <div className="col" onClick={() => setProcedures(!procedures)} >
                                                 {
@@ -764,7 +764,7 @@ const HeaderMobileComponent = () => {
                                             <div className="d-flex justify-content-center pt-3">
                                                 <div className="row">
                                                     <div className="col">
-                                                        <Link className="subLink" to="#">Hôtel</Link>
+                                                        <Link className="subLink" to="/hotel-el-mouradi-gammarth/">Hôtel</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -806,7 +806,7 @@ const HeaderMobileComponent = () => {
                         <div className="d-flex justify-content-center pt-3">
                             <div className="row">
                                 <div className="col">
-                                    <Link className="link" to="#">Blog</Link>
+                                    <Link className="link" to="/blogs/">Blog</Link>
                                 </div>
                             </div>
                         </div>
@@ -816,7 +816,7 @@ const HeaderMobileComponent = () => {
                         <div className="d-flex justify-content-center pt-3">
                             <div className="row">
                                 <div className="col">
-                                    <Link className="link" to="#">Contact</Link>
+                                    <Link className="link" to="/contact/">Contact</Link>
                                 </div>
                             </div>
                         </div>

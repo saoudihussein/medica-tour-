@@ -1,0 +1,18 @@
+.blog-recent {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #0175aa;
+}
+
+@media screen and (max-width: 993px) {
+    .blogs{
+        border-bottom: 3px solid rgba(0,0,0,.1);
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .blogs{
+        border-right: 3px solid rgba(0,0,0,.1);
+    }
+}

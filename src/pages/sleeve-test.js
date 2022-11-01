@@ -4,6 +4,7 @@ import footerImg from "../images/dentalcare-promo-new.png"
 import { FaPhoneAlt, FaRegEnvelope, FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import "./sleeve.css";
 import Layout from "../layouts/layout";
+import { Link } from "gatsby";
 
 const SleevePage = () => {
     return (
@@ -42,22 +43,7 @@ const SleevePage = () => {
                 </div>
             </div>
 
-            {/* free devis block */}
-            <div className="container-fluid pb-3 pt-3 free-devis-bloc">
-                <div className="container pt-4">
 
-                    <div className="row d-flex justify-content-center">
-                        <div className="col-sm-12 col-md-6 text-center">
-                            <p className="float-start text-devis-block pt-2">CONTACT US AND SCHEDULE YOUR VISIT</p>
-                        </div>
-
-                        <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div className="container-fluid  pb-5 pt-2">
                 <div className="container ">
@@ -110,8 +96,8 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <Link to="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
+                            <Link to="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
                         </div>
                     </div>
                 </div>
@@ -175,8 +161,8 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <Link to="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
+                            <Link to="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
                         </div>
                     </div>
                 </div>
@@ -248,7 +234,7 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-4">
-                            <img className="img-fluid" src={footerImg} />
+                            <img className="img-fluid" src={footerImg} alt="img" />
                         </div>
 
                         <div className="col-sm-12 col-md-2">
@@ -337,8 +323,8 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <Link to="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
+                            <Link to="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
                         </div>
                     </div>
                 </div>
@@ -389,8 +375,8 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <Link to="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
+                            <Link to="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
                         </div>
                     </div>
                 </div>
@@ -427,8 +413,8 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <Link to="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
+                            <Link to="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
                         </div>
                     </div>
                 </div>
@@ -475,8 +461,8 @@ const SleevePage = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-6 text-center">
-                            <a href="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
-                            <a href="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</a>
+                            <Link to="#" className="d-none d-sm-none d-md-block float-end btn btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
+                            <Link to="#" className="d-sm-block d-md-none btn  btn-devis-free" role="button" aria-pressed="true">DEVIS GRATUIT</Link>
                         </div>
                     </div>
                 </div>
